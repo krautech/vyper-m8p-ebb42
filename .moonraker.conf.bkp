@@ -109,7 +109,7 @@ system_dependencies = scripts/system-dependencies.json
 managed_services = KlipperScreen
 
 [spoolman]
-server = http://192.168.0.230:7912
+server = http://192.168.0.50:7912
 sync_rate = 5
 
 [update_manager moonraker-obico]
