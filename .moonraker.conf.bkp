@@ -127,6 +127,15 @@ requirements = scripts/KlipperScreen-requirements.txt
 system_dependencies = scripts/system-dependencies.json
 managed_services = KlipperScreen
 
+[update_manager Klippain-ShakeTune]
+type = git_repo
+origin = https://github.com/Frix-x/klippain-shaketune.git
+path = ~/klippain_shaketune
+virtualenv = ~/klippy-env
+requirements = requirements.txt
+system_dependencies = system-dependencies.json
+primary_branch = main
+
 [spoolman]
 server = http://192.168.0.50:7912
 sync_rate = 5
@@ -140,14 +149,4 @@ requirements = requirements.txt
 install_script = install.sh
 managed_services = 
 	moonraker-obico
-
-[update_manager Klippain-ShakeTune]
-type = git_repo
-origin = https://github.com/Frix-x/klippain-shaketune.git
-path = ~/klippain_shaketune
-virtualenv = ~/klippain_shaketune-env
-requirements = requirements.txt
-system_dependencies = system-dependencies.json
-primary_branch = main
-managed_services = klipper
 
